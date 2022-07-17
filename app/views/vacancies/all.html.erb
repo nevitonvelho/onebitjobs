@@ -1,0 +1,21 @@
+
+<div class='container'>
+
+<a target="_blank" href="https://www.amazon.com.br/music/unlimited?_encoding=UTF8&linkCode=ib1&tag=busconomia-20&linkId=a27525b93d1ca41b2912cc4dd75d2b7e&ref_=ihub_curatedcontent_97eafc46-2321-4be0-b0ba-2a7df165b993">
+    <img src="/assets/promo.jpg" class="promo navbar-brand"/>
+</a>
+  <h1 class='mb-5'>Vagas</h1>
+  <div class="row">
+    <div class="col-lg-10">
+      <% @vacancies.each do |vacancy| %>
+        <%= render partial: 'vacancy_card', locals: { vacancy: vacancy } %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="d-flex">
+    <div class="mx-auto mt-5">
+      <%= paginate @vacancies %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+@import "bootstrap/scss/bootstrap";
+@import "custom";
+@import "login";
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: #000;
+    font-style: none;
+}
+
+
+.btn-site-light, .btn-site-light:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: $site-red;
+    border-color: $site-red;
+
+    &:hover{
+        box-shadow: 0px 0px 0px 1px $site-red;
+    }
+}
+
+h1.impact-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.bg-site-red {
+    background-color: $site-red;
+}
+
+.link_nave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+        color: #fff;
+    }
+}
+
+.bg-site-red{
+    background-color: $site-red;
+}
+
+.th-text-color{
+    color: #4F4F4F;
+}
+
+.vacancy-card, .card {
+    border-radius: 1rem;
+    .card-header:first-child {
+      border-radius: 1rem 1rem 0px 0px;
+    }
+  }
+
+
+  .promo{
+      width: 200px;
+  }
+
